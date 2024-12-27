@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intan Safety Jogja | Admin Panel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" href="img/logo-icon.png" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" class="js-color-style" href="css/colors/color-5.css" />
+  </head>
+
+  <body class="admin-panel js-admin-panel">
+    <!-- page loader start -->
+    <div class="page-loader js-page-loader">
+      <div></div>
+    </div>
+    <!-- page loader end -->
+
+    <!-- main wrapper start -->
+    <div class="main-wrapper">
+      <!-- sidebar start -->
+      <nav class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+          <div class="logo-image">
+            <img src="img/logo-icon.png" alt="sidebar logo" />
+          </div>
+          <span class="logo-name">INTAN JOGJA SAFETY</span>
+        </div>
+
+        <div class="menu-items">
+          <ul class="nav-links">
+            <li>
+              <a href="#">
+                <i class="fas fa-home-alt"></i>
+                <span class="link-name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-user-alt"></i>
+                <span class="link-name">Account</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-list-alt"></i>
+                <span class="link-name">Course</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-blogger"></i>
+                <span class="link-name">Blog</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="logout-mode">
+            <li>
+              <a href="#">
+                <i class="fas fa-sign-out"></i>
+                <span class="link-name">Logout</span>
+              </a>
+            </li>
+            <li class="mode">
+              <a href="#">
+                <i class="fas fa-moon"></i>
+                <span class="link-name">Dark Mode</span>
+              </a>
+
+              <div class="mode-toggle js-mode-toggle">
+                <span class="switch"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="admin-dashboard">
+        <div class="top">
+          <i class="fas fa-bars sidebar-toggle"></i>
+
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search here ..." />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- main wrapper end -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

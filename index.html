@@ -1,201 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <title>Fitri's Portofolio</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>My Portofolio | Fitri Febriani</title>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
+
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Fitri Febriani</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- End Navigation Bar -->
+    <!-- page loader start -->
+    <div class="page-loader js-page-loader">
+      <div></div>
+    </div>
+    <!-- page loader end -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img class="rounded-circle img-thumbnail" src="assets/images/my-photo.jpg" alt="Fitri Febriani" width="200" />
-      <h1 class="display-4">Fitri Febriani</h1>
-      <p class="lead">Fresh Graduate - Junior Web Developer</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Jumbotron-->
-
-    <!-- About -->
-    <section id="about">
-      <div class="container mb-0">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-12">
-            <p>
-              Hello! <i class="bi bi-emoji-smile"></i>
-              <br />
-              I am Fitri and welcome to my portofolio website.
-              <br />
-              I was graduated from Informatics major of Amikom Yogyakarta University. I really enjoy coding website especially on front-end development. And I really like designing system with DFD, ERD or UML types.
-            </p>
-            <p>Let's checkout my previous projects below.</p>
-            <button class="btn btn-warning px-4" type="button" id="connect">
-              <a class="text-white text-decoration-none fw-bold" href="#projects">Let's go!</a>
+    <!-- main wrapper start -->
+    <div class="main-wrapper">
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <div
+            class="header-main d-flex justify-content-between align-items-center"
+          >
+            <div class="header-logo">
+              <a href="index.html">
+                <span class="fw-bold">Fitri's Portofolio</span>
+              </a>
+            </div>
+            <button
+              type="button"
+              class="header-hamburger-btn js-header-menu-toggler"
+            >
+              <span></span>
             </button>
+            <div class="header-backdrop js-header-backdrop"></div>
+            <nav class="header-menu js-header-menu">
+              <button
+                type="button"
+                class="header-close-btn js-header-menu-toggler"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+                <li class="menu-item">
+                  <a href="portofolios.html">Project</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#011627"
-          fill-opacity="1"
-          d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End About -->
+      </header>
+      <!-- header end -->
 
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3 text-light">
-          <div class="col">
-            <h2>My Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/images/1.png" class="card-img-top" alt="resume-page" />
-              <div class="card-body">
-                <h5 class="card-title">Resume</h5>
-                <p class="card-text">This is my online resume that will display my personal resume that contain my personal information.</p>
-                <a href="resume.html" class="btn btn-primary">Go to this page</a>
+      <!-- banner section start -->
+      <section
+        class="banner-section d-flex align-items-center position-relative"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="banner-text">
+                <h2 class="mb-3">Hello, I'm ....</h2>
+                <h1 class="mb-3 text-capitalize">Fitri Febriani</h1>
+                <p class="mb-4">
+                  Welcome to my portfolio website! I am a passionate and
+                  dedicated web developer with a flair for creating dynamic and
+                  visually appealing websites. With a strong foundation in CSS
+                  Bootstrap and Laravel PHP Framework, I bring a comprehensive
+                  approach to crafting appealing and user-centric websites.
+                </p>
+                <a href="#" class="btn btn-theme">All Projects</a>
+              </div>
+            </div>
+            <div
+              class="col-md-6 order-first order-md-last m-auto mb-5 mb-md-0 justify-content-center d-flex"
+            >
+              <div class="banner-img">
+                <div class="circular-img">
+                  <img src="img/me.jpeg" alt="banner img" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/images/2.png" class="card-img-top" alt="app-cassier" />
-              <div class="card-body">
-                <h5 class="card-title">Cassier Website</h5>
-                <p class="card-text">This website was created when i took my diploma degree. The link will show the statis website of cassier application.</p>
-                <a href="https://fitrife.github.io/app-cassier/" class="btn btn-primary">Go to this page</a>
+        </div>
+      </section>
+      <!-- banner section end -->
+
+      <!-- resume section start -->
+      <section class="resume-section section-padding">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="section-title text-center">
+                <h2 class="title">my resume</h2>
+                <p class="sub-title">Education and experience journey</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/images/3.PNG" class="card-img-top mt-5 mb-5" alt="app-diagnose" />
-              <div class="card-body">
-                <h5 class="card-title">Virus Diagnose Website</h5>
-                <p class="card-text">This website was created when i took my bachelor degree. The link will show the statis website of virus diagnose application.</p>
-                <a href="https://fitrife.github.io/app-sirus/" class="btn btn-primary">Go to this page</a>
+          <div class="row">
+            <!-- education start -->
+            <div class="col-md-12">
+              <h3 class="title">Education</h3>
+              <div class="resume-item mb-4 box">
+                <span class="date"
+                  ><i class="fa-solid fa-calendar"></i> 2018 - 2020</span
+                >
+                <br />
+                <span class="fw-bold"
+                  >Bachelor of Computer Engineer - GPA 3.71</span
+                >
+                <p class="school">University of Amikom Yogyakarta</p>
+              </div>
+              <div class="resume-item mb-4 box">
+                <span class="date"
+                  ><i class="fa-solid fa-calendar"></i> 2015 - 2018</span
+                >
+                <br />
+                <span class="fw-bold"
+                  >Associate of Informatic Engineer - GPA 3.72</span
+                >
+                <p class="school">University of Amikom Yogyakarta</p>
+              </div>
+
+              <h3 class="title">Experience</h3>
+              <div class="resume-item mb-4 box">
+                <span class="date"
+                  ><i class="fa-solid fa-calendar"></i> April 2022 – December
+                  2023</span
+                >
+                <br />
+                <span class="fw-bold">Web Developer</span>
+                <ul>
+                  <li>
+                    Designed and developed landing pages for advertising
+                    campaigns in close collaboration with the digital marketing
+                    and design teams, ensuring high conversion rates.
+                  </li>
+                  <li>
+                    Developed and maintained the company's website using PHP
+                    Laravel Framework, improving functionality and user
+                    experience while ensuring scalability and security.
+                  </li>
+                  <li>
+                    Collaborated with cross-functional teams to meet project
+                    goals and deadlines, contributing to overall business growth
+                    through web solutions.
+                  </li>
+                </ul>
+                <span class="company">PT Intan Cahaya Mandiri</span>
+              </div>
+              <div class="resume-item mb-4 box">
+                <span class="date"
+                  ><i class="fa-solid fa-calendar"></i> January 2022 - March
+                  2022</span
+                >
+                <br />
+                <span class="fw-bold">Product Manager Internship </span>
+                <ul>
+                  <li>
+                    Managed a team by tracking individual progress, assigning
+                    tasks, and ensuring timely resolution of tickets to meet
+                    project milestones.
+                  </li>
+                  <li>
+                    Oversaw the development process, ensuring smooth execution
+                    of system processes and aligning team efforts with product
+                    goals.
+                  </li>
+                  <li>
+                    Gained hands-on experience in backend programming with
+                    Golang, contributing to system architecture and backend
+                    solutions.
+                  </li>
+                  <li>
+                    Acquired skills in API testing using Postman, ensuring
+                    functionality and reliability of integrations.
+                  </li>
+                </ul>
+                <span class="company">PT Privy Identitas Digital</span>
+              </div>
+              <div class="resume-item mb-4 box">
+                <span class="date"
+                  ><i class="fa-solid fa-calendar"></i> June 2021 - September
+                  2021</span
+                >
+                <br />
+                <span class="fw-bold">Bootcamp Back End Developer </span>
+                <ul>
+                  <li>
+                    Learned system design principles and best practices for
+                    creating scalable, efficient backend architectures.
+                  </li>
+                  <li>
+                    Developed backend services using modern technologies,
+                    ensuring robust performance and seamless integration with
+                    front-end systems.
+                  </li>
+                  <li>
+                    Built and deployed applications, gaining hands-on experience
+                    with database management, APIs, and server-side logic.
+                  </li>
+                </ul>
+                <span class="company">EnigmaCamp</span>
+              </div>
+            </div>
+            <!-- experience end -->
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section start -->
+      <section class="skills-section">
+        <div class="container" data-aos="fade-up">
+          <div class="box py-2">
+            <div class="row text-center">
+              <div class="col-md-6 col-lg-3">
+                <div class="skills-item">
+                  <h2 class="style-1"><i class="fa-brands fa-laravel"></i></h2>
+                  <p>Laravel</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="skills-item">
+                  <h2 class="style-1"><i class="fa-solid fa-fire"></i></h2>
+                  <p>CodeIgniter 3</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="skills-item">
+                  <h2 class="style-1"><i class="fa-solid fa-database"></i></h2>
+                  <p>SQLite & MySQL</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="skills-item">
+                  <h2 class="style-1">
+                    <i class="fa-brands fa-bootstrap"></i>
+                  </h2>
+                  <p>Bootstrap</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Project -->
+      </section>
+      <!-- fun facts section end -->
 
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col title">
-            <h2>Contact Me</h2>
+      <!-- projects section start -->
+      <section class="projects-section section-padding">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="section-title text-center">
+                <h2 class="title">portofolio</h2>
+                <p class="sub-title">Check out my beautiful portofolio</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- projects item start -->
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="portfolio-box"
+                href="arsa-training.html"
+                title="Arsa Training & Consultant"
+              >
+                <img
+                  class="img-fluid"
+                  src="img/portofolio-pages/arsa/banner.png"
+                  alt="Website Arsa Training & Consultant"
+                />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Website</div>
+                  <div class="project-name">Arsa Training & Consultant</div>
+                </div>
+              </a>
+            </div>
+            <!-- projects item end -->
+            <!-- projects item start -->
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="portfolio-box"
+                href="old.intancahayamandiri.com"
+                title="Intan Safety"
+              >
+                <img
+                  class="img-fluid"
+                  src="img/portofolio-pages/intan-cahaya-mandiri/banner.png"
+                  alt="Website Pusat Pelatihan K3"
+                />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Website</div>
+                  <div class="project-name">Intan Safety</div>
+                </div>
+              </a>
+            </div>
+            <!-- projects item end -->
+            <!-- projects item start -->
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="portfolio-box"
+                href="k3-lingkungan.html"
+                title="Sertifikasi K3 Lingkungan"
+              >
+                <img
+                  class="img-fluid"
+                  src="img/portofolio-pages/k3-lingkungan/banner-k3-lingkungan.png"
+                  alt="Landing Page K3 Lingkungan"
+                />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Landing Page</div>
+                  <div class="project-name">Sertifikasi K3 Lingkungan</div>
+                </div>
+              </a>
+            </div>
+            <!-- projects item end -->
+          </div>
+          <div class="row">
+            <div class="col-12 text-center mt-3">
+              <a href="portofolios.html" class="btn btn-theme"
+                >view all portofolios</a
+              >
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form action="mailto:fitrifebriani99@gmail.com" method="post" enctype="text/plain">
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+      </section>
+      <!-- courses section end -->
+
+      <!-- download section start -->
+      <section class="download-section">
+        <div class="container" data-aos="fade-up">
+          <div class="box py-4">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="section-title text-center">
+                  <p class="sub-title text-white">
+                    Check out my resume here ...
+                  </p>
+                  <a
+                    class="btn btn-light"
+                    href="https://drive.google.com/file/d/14cq8tfdfUJDudYNK_5ujx3Xpdv2E0BPD/view"
+                    target="_blank"
+                    >Download Now</a
+                  >
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#011627"
-          fill-opacity="1"
-          d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
+      </section>
+      <!-- download section end -->
 
-    <!-- Footer -->
-    <footer class="text-center">
-      <div class="container">
-        <section class="mb-4">
-          <a href="https://www.linkedin.com/in/fitri-febriani-75bb981b8/" class="btn btn-light btn-floating m-1" role="button">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://github.com/fitrife" class="btn btn-light btn-floating m-1" role="button">
-            <i class="bi bi-github"></i>
-          </a>
-        </section>
-      </div>
-      <div class="text-center p-3">
-        <span class="text-white">Fitri Febriani &copy; 2021</span>
-      </div>
-    </footer>
-    <!-- End Footer -->
+      <!-- footer start -->
+      <footer class="footer">
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="m-0 py-4 text-center">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Fitri's Portofolio
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+    <!-- main wrapper end -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

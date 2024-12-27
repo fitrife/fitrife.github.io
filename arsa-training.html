@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fitri's Portofolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- page loader start -->
+    <div class="page-loader js-page-loader">
+      <div></div>
+    </div>
+    <!-- page loader end -->
+
+    <!-- main wrapper start -->
+    <div class="main-wrapper">
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <div
+            class="header-main d-flex justify-content-between align-items-center"
+          >
+            <div class="header-logo">
+              <a href="index.html">
+                <span class="fw-bold">Fitri's Portofolio</span>
+              </a>
+            </div>
+            <button
+              type="button"
+              class="header-hamburger-btn js-header-menu-toggler"
+            >
+              <span></span>
+            </button>
+            <div class="header-backdrop js-header-backdrop"></div>
+            <nav class="header-menu js-header-menu">
+              <button
+                type="button"
+                class="header-close-btn js-header-menu-toggler"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+                <li class="menu-item">
+                  <a href="portofolios.html">Project</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- course details section start -->
+      <section class="course-details section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- course header start -->
+              <div class="course-header box">
+                <h2 class="text-capitalize">
+                  Company Website Arsa Training & Consultant
+                </h2>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Company</span> : PT Arsa Jaya Prima
+                  </li>
+                  <li>
+                    <span class="fw-bold">Technology</span> : Laravel 10,
+                    Bootstrap 5, MySQL
+                  </li>
+                  <li><span class="fw-bold">Developed</span> : 2023</li>
+                  <li>
+                    <span
+                      ><a class="text-underline" href="https://arsatraining.com"
+                        ><u>Go to Page</u></a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- course header end -->
+
+              <!-- course tabs start -->
+              <nav class="course-tabs">
+                <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="project-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#project-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="project-home"
+                    aria-selected="true"
+                  >
+                    Beranda
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="project-programs-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#project-programs"
+                    type="button"
+                    role="tab"
+                    aria-controls="project-programs"
+                    aria-selected="false"
+                  >
+                    Training Program
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="project-register-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#project-register"
+                    type="button"
+                    role="tab"
+                    aria-controls="project-register"
+                    aria-selected="false"
+                  >
+                    Pendaftaran
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="project-certificate-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#project-certificate"
+                    type="button"
+                    role="tab"
+                    aria-controls="project-certificate"
+                    aria-selected="false"
+                  >
+                    Cek Sertifikat
+                  </button>
+                </div>
+              </nav>
+              <!-- course tabs end -->
+
+              <!-- tab panes start -->
+              <div class="tab-content border-0" id="nav-tabContent">
+                <!-- project detail start -->
+                <div
+                  class="tab-pane active"
+                  id="project-home"
+                  role="tabpanel"
+                  aria-labelledby="project-home-tab"
+                >
+                  <div class="project-training box">
+                    <h3 class="text-capitalize mb-4">Beranda</h3>
+                    <img
+                      class="box"
+                      src="img/portofolio-pages/arsa/home.png"
+                      alt="Home Arsa"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="project-programs"
+                  role="tabpanel"
+                  aria-labelledby="project-programs-tab"
+                >
+                  <div class="project-training box" data-aos="fade-up">
+                    <h3 class="text-capitalize mb-4">Training Program</h3>
+                    <img
+                      class="box"
+                      src="img/portofolio-pages/arsa/program.png"
+                      alt="Program Arsa"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="project-register"
+                  role="tabpanel"
+                  aria-labelledby="project-register-tab"
+                >
+                  <div class="project-training box" data-aos="fade-up">
+                    <h3 class="text-capitalize mb-4">Pendaftaran</h3>
+                    <img
+                      class="box"
+                      src="img/portofolio-pages/arsa/register.png"
+                      alt="Register Arsa"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="project-certificate"
+                  role="tabpanel"
+                  aria-labelledby="project-certificate-tab"
+                >
+                  <div class="project-training box" data-aos="fade-up">
+                    <h3 class="text-capitalize mb-4">Cek Sertifikat</h3>
+                    <img
+                      class="box"
+                      src="img/portofolio-pages/arsa/certificate-checking.png"
+                      alt="Certificate Checking Arsa"
+                    />
+                  </div>
+                </div>
+
+                <!-- project detail end -->
+              </div>
+              <!-- tab panes end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- course details section end -->
+
+      <!-- footer start -->
+      <footer class="footer">
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="m-0 py-4 text-center">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Fitri's Portofolio
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+    <!-- main wrapper end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
